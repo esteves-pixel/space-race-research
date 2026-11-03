@@ -1,0 +1,135 @@
+{
+  "episode": "EP00",
+  "title": "The map: assets, ground, four connections, seven topics",
+  "checked": "2026-10-26",
+  "sources": [
+    {
+      "label": "KeepTrack: ASAT tests and debris",
+      "url": "https://keeptrack.space/top-10/10-anti-satellite-tests"
+    },
+    {
+      "label": "TechCrunch: US pledge, Apr 2022",
+      "url": "https://techcrunch.com/2022/04/18/vp-harris-us-commits-to-no-anti-satellite-tests-that-fill-orbit-with-debris"
+    },
+    {
+      "label": "SpaceNews: MEV-1 docks with Intelsat 901",
+      "url": "https://spacenews.com/northrop-grummans-mev-1-servicer-docks-with-intelsat-satellite/"
+    },
+    {
+      "label": "Shijian-25 refuelling, reported",
+      "url": "https://korben.info/en/china-first-orbital-refueling-station-secret.html"
+    },
+    {
+      "label": "Via Satellite, 19 Oct",
+      "url": "https://www.satellitetoday.com/government-military/2026/10/19/russian-satellite-maneuvered-within-extreme-proximity-of-iceye-satellite-leolabs-reports/"
+    },
+    {
+      "label": "Ars Technica, 19 Oct",
+      "url": "https://arstechnica.com/space/2026/10/russian-spacecraft-maneuvers-in-extreme-proximity-to-satellite-used-by-ukraine/"
+    },
+    {
+      "label": "Breaking Defense, 19 Oct",
+      "url": "https://breakingdefense.com/2026/10/russian-satellite-stalked-iceye-spacecraft-in-potentially-dangerous-on-orbit-maneuvers/"
+    },
+    {
+      "label": "S2a Systems video, 18 Oct",
+      "url": "https://x.com/s2a_systems/status/2111745395747361049"
+    },
+    {
+      "label": "Vantor image, 22 Oct",
+      "url": "https://x.com/vantortech/status/2113298410350534684"
+    },
+    {
+      "label": "Air & Space Forces, 21 Oct",
+      "url": "https://www.airandspaceforces.com/russian-satellite-shadowing-means-space-force/"
+    },
+    {
+      "label": "Defense News, 23 Oct",
+      "url": "https://www.defensenews.com/space/2026/10/23/the-west-cant-stop-me-space-wars-heat-up-as-russia-tails-a-ukraine-linked-us-satellite/"
+    },
+    {
+      "label": "CNN, 19 Oct",
+      "url": "https://www.cnn.com/2026/10/19/science/russian-satellite-iceye-x36-approach"
+    },
+    {
+      "label": "NASA: Swift mission ends",
+      "url": "https://science.nasa.gov/blogs/swift/2026/10/23/nasas-swift-mission-ends-ahead-of-re-entry/"
+    },
+    {
+      "label": "NASA: next steps for Swift boost, 19 Aug",
+      "url": "https://www.nasa.gov/news-release/nasa-updates-next-steps-for-commercial-swift-boost-mission/"
+    },
+    {
+      "label": "Katalyst LINK updates",
+      "url": "https://www.katalystspace.com/mission/link"
+    },
+    {
+      "label": "CSIS: New Rhythms in GEO",
+      "url": "https://www.csis.org/analysis/new-rhythms-geo-quantitative-analysis-unusual-behavior-geosynchronous-orbit-chinese"
+    },
+    {
+      "label": "Breaking Defense: 75 unusual moves",
+      "url": "https://breakingdefense.com/2026/04/suspect-in-space-analysis-finds-75-unusual-moves-by-chinese-satellites-in-nearly-10-years/"
+    },
+    {
+      "label": "Launch Library 2",
+      "url": "https://thespacedevs.com/llapi"
+    },
+    {
+      "label": "Breaking Defense: Iron Beam active",
+      "url": "https://breakingdefense.com/2025/12/israels-new-laser-system-goes-active/"
+    },
+    {
+      "label": "Space.com: Russian laser explained",
+      "url": "https://www.space.com/russian-satellite-blinding-laser-explained/"
+    },
+    {
+      "label": "SWF Counterspace 2026",
+      "url": "https://www.swfound.org/counterspace"
+    },
+    {
+      "label": "NASA NEPP: the Starfish exo-atmospheric tests",
+      "url": "https://nepp.nasa.gov/files/26652/2015-561-Stassinopoulos-Final-Paper-Web-HEART2015-STARFISH-supplemental-TN26292.pdf"
+    },
+    {
+      "label": "White House briefing, 15 Feb 2024",
+      "url": "https://bidenwhitehouse.archives.gov/briefing-room/press-briefings/2024/02/15/press-briefing-by-press-secretary-karine-jean-pierre-and-white-house-national-security-communications-advisor-john-kirby-3/"
+    },
+    {
+      "label": "Reuters: UN veto",
+      "url": "https://www.reuters.com/science/russia-blocks-us-move-un-nuclear-weapons-space-2024-04-24/"
+    },
+    {
+      "label": "Pavur, Black Hat 2020 (PDF)",
+      "url": "https://i.blackhat.com/USA-20/Wednesday/us-20-Pavur-Whispers-Among-The-Stars-Perpetrating-And-Preventing-Satellite-Eavesdropping-Attacks.pdf"
+    },
+    {
+      "label": "UCSD 2025 study",
+      "url": "https://cns.ucsd.edu/?p=11862"
+    },
+    {
+      "label": "CISA / FBI advisory, 2022",
+      "url": "https://www.cisa.gov/news-events/alerts/2022/03/17/strengthening-cybersecurity-satcom-network-providers-and-customers"
+    },
+    {
+      "label": "OpenAI: coordinated disclosure, 21 Oct",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+    },
+    {
+      "label": "Axios, 22 Oct",
+      "url": "https://www.axios.com/2026/10/22/php-vulnerability-security-update-websites"
+    },
+    {
+      "label": "NBC News, 21 Oct",
+      "url": "https://www.nbcmiami.com/news/national-international/critical-vulnerabilities-in-commonly-used-web-code-spark-rush-to-update-systems/3875472/"
+    },
+    {
+      "label": "Breaking Defense: Starlink and jamming, 2022",
+      "url": "https://breakingdefense.com/2022/04/spacex-beating-russian-jamming-attack-was-eyewatering-dod-official/"
+    },
+    {
+      "label": "Waterloo: TamperBench",
+      "url": "https://uwaterloo.ca/news/media/major-security-weaknesses-found-leading-open-ai-models"
+    }
+  ]
+}

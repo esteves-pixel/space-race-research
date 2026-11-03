@@ -1,0 +1,112 @@
+{
+  "topics": [
+    {
+      "name": "Satellites can be listened to, jammed and hacked",
+      "notes": "41-46",
+      "then": "The book shows that satellite links were left open (an enthusiast watching NATO spy pictures in 2002) and that Russia attacked the Viasat KA-SAT network on the first day of the Ukraine invasion, while Starlink held up.",
+      "now": "The US and EU publicly blamed Russia for the KA-SAT attack in May 2022, and US agencies issued a warning to satellite network providers. Russia's jamming of Starlink over Ukraine is a continuing, documented contest, tracked each year by the Secure World Foundation.",
+      "ai": "AI cuts both ways: it helps defenders spot strange traffic on modems and ground stations, and it speeds up the search for bugs in open-source flight software.",
+      "we_do": "We counted which open-source space software projects publish a list of what is inside them (a software bill of materials). One of nine did. We are now building that list for NASA's core flight software ourselves.",
+      "opportunity": "Small companies can sell software inventories, key management and ground-station hardening to small satellite operators. The US warning gives buyers a ready checklist.",
+      "sources": [
+        {
+          "label": "CISA/FBI advisory AA22-076A, satellite network providers (17 Mar 2022)",
+          "url": "https://scrm.aerospace.org/wp-content/uploads/2022/03/AA22-076_Strengthening_Cybersecurity_of_SATCOM_Network_Providers_and_Customers.pdf"
+        },
+        {
+          "label": "US and EU attribute the Viasat attack to Russia (Via Satellite, 11 May 2022)",
+          "url": "https://www.satellitetoday.com/cybersecurity/2022/05/11/us-and-eu-officials-attribute-viasat-cyber-attack-to-russia/"
+        },
+        {
+          "label": "Secure World Foundation, Global Counterspace Capabilities (annual)",
+          "url": "https://swfound.org/counterspace/"
+        },
+        {
+          "label": "Pavur, Whispers Among the Stars, Black Hat 2020",
+          "url": "https://i.blackhat.com/USA-20/Wednesday/us-20-Pavur-Whispers-Among-The-Stars-Perpetrating-And-Preventing-Satellite-Eavesdropping-Attacks.pdf"
+        },
+        {
+          "label": "Our check: SBOMs in nine open-source space repos (15 Oct 2026)",
+          "url": "https://goncaloesteves.io/space-race/"
+        }
+      ]
+    },
+    {
+      "name": "The view from above: climate, El Niño and the sunshade idea",
+      "notes": "47-55",
+      "then": "The book uses satellite tracking of El Niño and the long climate record to argue that space gives us the planet's history, then floats a sunshade at the L1 point between Earth and Sun to block a little sunlight.",
+      "now": "NOAA issued an El Niño Advisory on 8 Oct 2026. The sunshade has grown from one-off papers into a small field: a 2025 preliminary design of a precursor mission and the first international sunshade workshop in May 2026. None has flown.",
+      "ai": "AI makes the satellite archives searchable by people who are not climate scientists. For a sunshade, the hard part is steering a swarm of thin sails, which is a simulation and control problem.",
+      "we_do": "In the episode we ask the question nobody in the papers answers well: if someone can dim the Sun, who decides, and who can switch it off?",
+      "opportunity": "Earth-observation analytics sold to insurers, farmers and utilities. A strong El Niño year is when buyers look for better forecasts.",
+      "sources": [
+        {
+          "label": "NOAA CPC, ENSO diagnostic discussion (El Niño Advisory)",
+          "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.html"
+        },
+        {
+          "label": "NASA, What is a Lagrange point?",
+          "url": "https://science.nasa.gov/resource/what-is-a-lagrange-point/"
+        },
+        {
+          "label": "Planetary sunshade: preliminary design of a precursor mission (Acta Astronautica, 2025)",
+          "url": "https://doi.org/10.1016/j.actaastro.2025.05.031"
+        },
+        {
+          "label": "Moon dust as a sunshield (University of Utah, 2023)",
+          "url": "https://attheu.utah.edu/research/moon-dust/"
+        }
+      ]
+    },
+    {
+      "name": "Space weather: Carrington, Quebec and the next big storm",
+      "notes": "56-57",
+      "then": "The 1859 Carrington storm and the 1989 Quebec blackout show that a solar storm can take down a power grid, and could again.",
+      "now": "How big Carrington was is now given as a range, not one number (USGS, 2024). The May 2024 storm reached G5, the top of NOAA's scale. NOAA's new solar-wind satellite, SOLAR-1 (launched as SWFO-L1 on 24 Sep 2025), reached its L1 orbit in January 2026.",
+      "ai": "AI models are being trained to predict solar eruptions earlier, but warning time is still set by physics: we see the eruption, then measure the solar wind at L1, roughly 15 to 60 minutes before it reaches Earth.",
+      "we_do": "Our TechLeap entry measures air density in low orbit, which is exactly what a solar storm changes. We tie the two together without claiming more than the instrument can show.",
+      "opportunity": "Drag and storm-alert data for satellite operators, and outage planning for companies on the ground.",
+      "sources": [
+        {
+          "label": "USGS, On the uncertain intensity estimate of the 1859 Carrington storm (2024)",
+          "url": "https://www.usgs.gov/publications/uncertain-intensity-estimate-1859-carrington-storm"
+        },
+        {
+          "label": "NOAA NESDIS, SOLAR-1 (ex SWFO-L1) press kit",
+          "url": "https://www.nesdis.noaa.gov/our-satellites/future-programs/swfo/swfo-l1-press-kit"
+        },
+        {
+          "label": "NOAA SWPC, G5 conditions observed (May 2024)",
+          "url": "https://www.swpc.noaa.gov/news/g5-conditions-observed"
+        }
+      ]
+    },
+    {
+      "name": "Impacts and planetary defense",
+      "notes": "58-69",
+      "then": "Chicxulub, Tunguska and Chelyabinsk show the hazard. Congress ordered a survey in 2005, and surveys like Catalina are the response.",
+      "now": "The 2005 law's goal (find 90% of near-Earth objects 140 m and larger by 2020) was missed. Catalina still leads on spotting small asteroids hours before they hit: 2026 RW1 was seen about six hours before it fell into the Indian Ocean in September 2026. A 2024 study traced the dinosaur-killer to a carbon-rich asteroid from beyond Jupiter.",
+      "ai": "Software is the bottleneck, not telescopes: a tracking algorithm run on old archive images found about 27,500 new asteroid candidates in 2024. That was clever search code, not AI.",
+      "we_do": "We time an episode to ESA's Hera arriving at the asteroid DART hit. The number we want to build: how many impacts were caught before they happened, year by year.",
+      "opportunity": "Orbit software and follow-up observing on public telescope archives. The missed 90% goal is a documented, unmet mandate.",
+      "sources": [
+        {
+          "label": "George E. Brown, Jr. NEO Survey Act, in Public Law 109-155 (2005)",
+          "url": "https://www.govinfo.gov/app/details/PLAW-109publ155"
+        },
+        {
+          "label": "Catalina Sky Survey, University of Arizona",
+          "url": "https://catalina.lpl.arizona.edu/"
+        },
+        {
+          "label": "Asteroid 2026 RW1, spotted hours before impact (Sky at Night, 6 Sep 2026)",
+          "url": "https://skyatnightmagazine.com/news/asteroid-2026-rw1-impact"
+        },
+        {
+          "label": "Asteroid that killed the dinosaurs came from beyond Jupiter (Scientific American, Aug 2024)",
+          "url": "https://www.scientificamerican.com/article/asteroid-that-killed-the-dinosaurs-came-from-beyond-jupiter/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,491 @@
+{
+  "book": "Red Moon Rising",
+  "chapter": 9,
+  "notes": "41-69",
+  "checked": "2026-11-03",
+  "method": "Each endnote opened or HTTP-checked on the date shown; graded by source type; newer sources verified to exist.",
+  "items": [
+    {
+      "n": 41,
+      "short": "Urban, BBC Newsnight 2002: enthusiast watches NATO spy pictures",
+      "available": "yes",
+      "grade": "secondary",
+      "still_ok": "dated",
+      "why": "HTTP 200 (BBC archive page). 2002 anecdote of an amateur receiving unencrypted satellite feeds. Still a valid illustration of open links; modern versions are documented in Pavur's 2020 work.",
+      "newer": [
+        {
+          "title": "Whispers Among the Stars (slides)",
+          "outlet": "Black Hat",
+          "date": "2020-08",
+          "url": "https://i.blackhat.com/USA-20/Wednesday/us-20-Pavur-Whispers-Among-The-Stars-Perpetrating-And-Preventing-Satellite-Eavesdropping-Attacks.pdf"
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "short": "Wess, USNI Proceedings Feb 2021, ASAT Goes Cyber",
+      "available": "yes-bot-blocked",
+      "grade": "secondary",
+      "still_ok": "dated",
+      "why": "HTTP 403 (bot block, not read). Professional-journal opinion piece by a Navy officer; USNI author page confirms the byline. Pre-dates KA-SAT, so 'cyber ASAT' is now demonstrated rather than predicted.",
+      "newer": [
+        {
+          "title": "AA22-076A Strengthening Cybersecurity of SATCOM Network Providers and Customers",
+          "outlet": "CISA / FBI",
+          "date": "2022-03-17",
+          "url": "https://scrm.aerospace.org/wp-content/uploads/2022/03/AA22-076_Strengthening_Cybersecurity_of_SATCOM_Network_Providers_and_Customers.pdf"
+        },
+        {
+          "title": "US and EU Officials Attribute Viasat Cyber Attack to Russia",
+          "outlet": "Via Satellite",
+          "date": "2022-05-11",
+          "url": "https://www.satellitetoday.com/cybersecurity/2022/05/11/us-and-eu-officials-attribute-viasat-cyber-attack-to-russia/"
+        }
+      ]
+    },
+    {
+      "n": 43,
+      "short": "Space Attacks Open Database, spacesecurity.info, accessed 2023",
+      "available": "yes",
+      "grade": "secondary",
+      "still_ok": "dated",
+      "why": "HTTP 200. Page shows its latest entry as 2019 (Microsat-R test), refs accessed July 2019: the book accessed it in Nov 2023 but the database looks unmaintained; it omits KA-SAT and 2021-26 events.",
+      "newer": [
+        {
+          "title": "Global Counterspace Capabilities 2025 (annual report, covers Feb 2024-Feb 2025)",
+          "outlet": "Secure World Foundation",
+          "date": "2025-04-03",
+          "url": "https://swfound.org/counterspace/"
+        },
+        {
+          "title": "Space Threat Assessment (annual)",
+          "outlet": "CSIS Aerospace Security",
+          "date": "ongoing",
+          "url": "https://aerospace.csis.org/space-threat-assessment/"
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "short": "Blinken, State Dept 10 May 2022: attribution of Russian cyber activity",
+      "available": "moved",
+      "grade": "primary",
+      "still_ok": "yes",
+      "why": "URL 404 as written; page exists at the same path without the trailing slash (state.gov, not fetched: 403 bot block). Coverage confirms the 10 May 2022 US statement with UK and EU on the KA-SAT attack. Note: the US statement blames Russia; SentinelOne found only loose code ties to a Russian actor and no formal attribution.",
+      "newer": [
+        {
+          "title": "US and EU Officials Attribute Viasat Cyber Attack to Russia",
+          "outlet": "Via Satellite",
+          "date": "2022-05-11",
+          "url": "https://www.satellitetoday.com/cybersecurity/2022/05/11/us-and-eu-officials-attribute-viasat-cyber-attack-to-russia/"
+        },
+        {
+          "title": "SentinelOne finds loose ties between Viasat hack and Russian actor (AcidRain analysis)",
+          "outlet": "SC Media",
+          "date": "2022",
+          "url": "https://scworld.com/analysis/sentinelone-finds-loose-ties-between-viasat-hack-and-russian-actor"
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "short": "Musk tweet, 10 May 2022, Starlink resisting Russian jamming and hacking",
+      "available": "yes-bot-blocked",
+      "grade": "social",
+      "still_ok": "dated",
+      "why": "HTTP 200 in the automated check, not re-read. Reported wording: Starlink 'has resisted Russian cyberwar jamming & hacking attempts so far, but they're ramping up their efforts'. A company owner's statement, not independent proof.",
+      "newer": [
+        {
+          "title": "Musk: SpaceX spending significant resources combating Russian jamming",
+          "outlet": "Kyiv Independent",
+          "date": "2023",
+          "url": "https://kyivindependent.com/musk-spacex-spending-significant-resources-combating-russian-jamming-of-starlink-in-ukraine/"
+        }
+      ]
+    },
+    {
+      "n": 46,
+      "short": "Horton, Washington Post 18 Apr 2023: Russia tests weapon against Starlink",
+      "available": "yes-bot-blocked",
+      "grade": "secondary",
+      "still_ok": "dated",
+      "why": "HTTP 000/403 (paywall or bot block, not read; byline unconfirmed). Based on leaked US documents (Tobol-1, 'ongoing military operational experiment'); outages have not been tied to Tobol vs other jammers. Ukraine reported Starlink disruptions from May 2024; Russian-media claims about 'Kalinka' are secondhand.",
+      "newer": [
+        {
+          "title": "Global Counterspace Capabilities 2025 (annual report, covers Feb 2024-Feb 2025)",
+          "outlet": "Secure World Foundation",
+          "date": "2025-04-03",
+          "url": "https://swfound.org/counterspace/"
+        },
+        {
+          "title": "Russia faces challenges trying to jam Starlink in Ukraine (analysis)",
+          "outlet": "Modern Ghana (aggregator)",
+          "date": "2023",
+          "url": "https://www.modernghana.com/news/1507548/russia-faces-challenges-trying-to-jam-starlink.html"
+        }
+      ]
+    },
+    {
+      "n": 47,
+      "short": "Becker, NOAA ENSO Blog, 5 Mar 2015: El Niño is here",
+      "available": "yes",
+      "grade": "primary",
+      "still_ok": "dated",
+      "why": "Valid for 2015 event only. Book uses it as an example of satellite-era ENSO tracking. NOAA CPC issued an El Niño Advisory on 8 Oct 2026 (Niño-3.4 +2.1 C; >83% chance strong-to-very strong through JFM 2027). Book's URL: author blog, the 'Mach 5' in the citation is a typo for March 5.",
+      "newer": [
+        {
+          "title": "ENSO Diagnostic Discussion (El Niño Advisory)",
+          "outlet": "NOAA Climate Prediction Center",
+          "date": "2026-10-08",
+          "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.html"
+        },
+        {
+          "title": "WMO El Niño/La Niña Update factsheet, August 2026",
+          "outlet": "WMO",
+          "date": "2026-08 (seen in search, not opened)",
+          "url": "https://wmo.int/sites/default/files/2026-08/Factsheet-ENSO-Update-August-2026-en.pdf"
+        }
+      ]
+    },
+    {
+      "n": 48,
+      "short": "Autry, Foreign Policy, 20 Jul 2019: space research and climate",
+      "available": "yes",
+      "grade": "author-own",
+      "still_ok": "dated",
+      "why": "Opinion piece by the book's own author; argues Earth-science from space. Claims are his framing, not independent evidence. 2019; no climate-satellite numbers should be taken from it today.",
+      "newer": [
+        {
+          "title": "ENSO Diagnostic Discussion (El Niño Advisory)",
+          "outlet": "NOAA Climate Prediction Center",
+          "date": "2026-10-08",
+          "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.html"
+        }
+      ]
+    },
+    {
+      "n": 49,
+      "short": "Encyclopedia Britannica, 'Paleoclimate' (Cretaceous), accessed 15 Nov 2023",
+      "available": "yes-bot-blocked",
+      "grade": "secondary",
+      "still_ok": "yes",
+      "why": "Tertiary reference; 403 is a bot block. Fine as background; replace with a primary paper (e.g. the Chicxulub or KPg work) if used on air.",
+      "newer": [
+        {
+          "title": "Fischer-Gödde et al., ruthenium isotopes: Chicxulub impactor was a C-type asteroid from beyond Jupiter (Science 385, 752)",
+          "outlet": "Scientific American (coverage of Science paper)",
+          "date": "2024-08",
+          "url": "https://www.scientificamerican.com/article/asteroid-that-killed-the-dinosaurs-came-from-beyond-jupiter/"
+        }
+      ]
+    },
+    {
+      "n": 50,
+      "short": "Jensen et al., Boreas 1999: Ancylus Lake stage, SW Baltic",
+      "available": "print",
+      "grade": "academic",
+      "still_ok": "dated",
+      "why": "Journal article, no URL; 1999. The Baltic freshwater-lake history is standard, but we did not open the paper. Check for a DOI via Boreas before citing."
+    },
+    {
+      "n": 51,
+      "short": "Herrle et al., Sci. Reports 2018: Black Sea outflow, Holocene meltwater",
+      "available": "print",
+      "grade": "academic",
+      "still_ok": "contested",
+      "why": "Sci. Reports 8:4081 (2018), not opened today. Supports gradual-outflow readings; the Black Sea 'flood' itself remains contested (Aksu 2002, 2022 review favour gradual outflow; Lericolais 2007 argues for flood).",
+      "newer": [
+        {
+          "title": "Aksu et al., Persistent Holocene outflow from the Black Sea to the Eastern Mediterranean (GSA Today)",
+          "outlet": "GSA Today",
+          "date": "2002",
+          "url": "https://rock.geosociety.org/gsatoday/archive/12/5/pdf/gt0205.pdf"
+        }
+      ]
+    },
+    {
+      "n": 52,
+      "short": "Ballard et al., Am. J. Archaeology 2001: Sinop deepwater archaeology",
+      "available": "print",
+      "grade": "academic",
+      "still_ok": "contested",
+      "why": "2001 survey found shoreline/wreck evidence; a 2011 review found no archaeological evidence for catastrophic submergence of settlements (seen via search, not opened). Do not say the flood is proven.",
+      "newer": [
+        {
+          "title": "Aksu et al., Persistent Holocene outflow from the Black Sea to the Eastern Mediterranean (GSA Today)",
+          "outlet": "GSA Today",
+          "date": "2002",
+          "url": "https://rock.geosociety.org/gsatoday/archive/12/5/pdf/gt0205.pdf"
+        }
+      ]
+    },
+    {
+      "n": 53,
+      "short": "Cornish, NASA: What is a Lagrange point?",
+      "available": "moved",
+      "grade": "primary",
+      "still_ok": "yes",
+      "why": "Physics unchanged. Old solarsystem.nasa.gov URL returns 301 to https://science.nasa.gov/resource/what-is-a-lagrange-point/ (observed 3 Nov 2026). Update the footnote."
+    },
+    {
+      "n": 54,
+      "short": "Angel PNAS 2006 and Fuglesang 2021 Acta Astronautica: L1 sunshades",
+      "available": "print",
+      "grade": "academic",
+      "still_ok": "dated",
+      "why": "Both real papers (not opened today). Angel's concept is 1.6 million flyers; Fuglesang's targets ~1% sunlight cut. Both are concepts, none flown. Newer: 2025 Acta Astronautica precursor-mission design; first IAA Planetary Sunshade Workshop held 13-15 May 2026 (Nottingham); a 2026 roadmap paper. Fuglesang does not appear as author on the 2025/2026 items we saw.",
+      "newer": [
+        {
+          "title": "Planetary sunshade for solar geoengineering: preliminary design of a precursor system and mission (Acta Astronautica)",
+          "outlet": "Acta Astronautica, DOI 10.1016/j.actaastro.2025.05.031",
+          "date": "2025",
+          "url": "https://doi.org/10.1016/j.actaastro.2025.05.031"
+        },
+        {
+          "title": "1st IAA Planetary Sunshade Workshop, 13-15 May 2026, Nottingham",
+          "outlet": "spaceagenda.com",
+          "date": "2026-05",
+          "url": "https://www.spaceagenda.com/?p=60740"
+        }
+      ]
+    },
+    {
+      "n": 55,
+      "short": "Bromley, Khan, Kenyon, PLOS Climate 2023 (lunar dust shield); Forbes 2023",
+      "available": "yes-bot-blocked",
+      "grade": "academic",
+      "still_ok": "contested",
+      "why": "Peer-reviewed model; Forbes 403 is a bot block. Authors themselves say it is no substitute for cutting emissions; amount of dust is mining-scale; critics call it speculation. we found no 2025-26 follow-up by them.",
+      "newer": [
+        {
+          "title": "Moon dust research page (Bromley, Utah)",
+          "outlet": "University of Utah",
+          "date": "2023",
+          "url": "https://attheu.utah.edu/research/moon-dust/"
+        },
+        {
+          "title": "Planetary sunshade for solar geoengineering: preliminary design of a precursor system and mission (Acta Astronautica)",
+          "outlet": "Acta Astronautica, DOI 10.1016/j.actaastro.2025.05.031",
+          "date": "2025",
+          "url": "https://doi.org/10.1016/j.actaastro.2025.05.031"
+        }
+      ]
+    },
+    {
+      "n": 56,
+      "short": "Green & Boardsen, Adv. Space Res. 2006: Great Auroral Storm 1859",
+      "available": "print",
+      "grade": "academic",
+      "still_ok": "dated",
+      "why": "Real paper (not opened). Carrington size is now less certain: Love, Hayakawa et al. 2024 give a median peak Dst of about -866 nT (excl. one datum) or -964 nT, with large uncertainty; a 2026 deep-learning study gives an upper limit near -1313 nT. 'One in a million' tail wording is theirs, not ours. May 2024 Gannon storm (G5, Kp 9, Dst about -412 nT) is the modern reference; SWFO-L1 launched 24 Sep 2025.",
+      "newer": [
+        {
+          "title": "On the uncertain intensity estimate of the 1859 Carrington storm (Love, Hayakawa et al.)",
+          "outlet": "J. Space Weather Space Clim. via USGS",
+          "date": "2024",
+          "url": "https://www.usgs.gov/publications/uncertain-intensity-estimate-1859-carrington-storm"
+        },
+        {
+          "title": "GIC-related observations during the May 2024 geomagnetic storm in the United States",
+          "outlet": "arXiv 2507.07009",
+          "date": "2025-07",
+          "url": "https://arxiv.org/pdf/2507.07009"
+        }
+      ]
+    },
+    {
+      "n": 57,
+      "short": "Phillips, SpaceWeatherArchive, 12 Mar 2021: Great Quebec Blackout",
+      "available": "yes",
+      "grade": "blog",
+      "still_ok": "dated",
+      "why": "Fine narrative of 13 Mar 1989; 2021 blog, not primary. Use Hydro-Quebec/NERC post-mortems or SWPC for numbers. Spaceweather.com site is active (mirror showed May 2026 entries). Space weather is now in the news cycle: Solar Cycle 25 maximum declared 15 Oct 2024 by NOAA/SWPC panel.",
+      "newer": [
+        {
+          "title": "What NASA is learning from the biggest geomagnetic storm in 20 years",
+          "outlet": "EurekAlert / NASA",
+          "date": "2024-2025 (see page)",
+          "url": "https://www.eurekalert.org/news-releases/1083377"
+        },
+        {
+          "title": "SWFO-L1 press kit (launched 24 Sep 2025; reached L1 orbit 23 Jan 2026 per secondary report)",
+          "outlet": "NOAA NESDIS",
+          "date": "2025",
+          "url": "https://www.nesdis.noaa.gov/our-satellites/future-programs/swfo/swfo-l1-press-kit"
+        }
+      ]
+    },
+    {
+      "n": 58,
+      "short": "Schulte et al., Science 2010: Chicxulub and the K-Pg extinction",
+      "available": "print",
+      "grade": "academic",
+      "still_ok": "dated",
+      "why": "Landmark review (Science 327:1214), not opened. Newer: Aug 2024 Science paper (ruthenium) says the impactor was a carbonaceous asteroid from beyond Jupiter, not a comet.",
+      "newer": [
+        {
+          "title": "Fischer-Gödde et al., ruthenium isotopes: Chicxulub impactor was a C-type asteroid from beyond Jupiter (Science 385, 752)",
+          "outlet": "Scientific American (coverage of Science paper)",
+          "date": "2024-08",
+          "url": "https://www.scientificamerican.com/article/asteroid-that-killed-the-dinosaurs-came-from-beyond-jupiter/"
+        }
+      ]
+    },
+    {
+      "n": 59,
+      "short": "Amos, BBC, 18 Nov 2016: 'Instant Himalayas' (Chicxulub peak ring)",
+      "available": "yes",
+      "grade": "secondary",
+      "still_ok": "dated",
+      "why": "Reports IODP/ICDP drilling result. Still valid as a pointer; 2016.",
+      "newer": [
+        {
+          "title": "Fischer-Gödde et al., ruthenium isotopes: Chicxulub impactor was a C-type asteroid from beyond Jupiter (Science 385, 752)",
+          "outlet": "Scientific American (coverage of Science paper)",
+          "date": "2024-08",
+          "url": "https://www.scientificamerican.com/article/asteroid-that-killed-the-dinosaurs-came-from-beyond-jupiter/"
+        }
+      ]
+    },
+    {
+      "n": 60,
+      "short": "Amos, BBC, 15 May 2017: asteroid hit 'worst possible place'",
+      "available": "yes",
+      "grade": "secondary",
+      "still_ok": "dated",
+      "why": "Reports the Chicxulub hydrocarbon-rich target rock finding (Kring et al.). Still the standard line.",
+      "newer": [
+        {
+          "title": "Fischer-Gödde et al., ruthenium isotopes: Chicxulub impactor was a C-type asteroid from beyond Jupiter (Science 385, 752)",
+          "outlet": "Scientific American (coverage of Science paper)",
+          "date": "2024-08",
+          "url": "https://www.scientificamerican.com/article/asteroid-that-killed-the-dinosaurs-came-from-beyond-jupiter/"
+        }
+      ]
+    },
+    {
+      "n": 61,
+      "short": "Robertson et al., GSA Bulletin 2004: first hours of the Cenozoic",
+      "available": "print",
+      "grade": "academic",
+      "still_ok": "contested",
+      "why": "Argues global ejecta-heated 'broil'; the thermal-pulse scale is debated in later work. Not opened today.",
+      "newer": [
+        {
+          "title": "Fischer-Gödde et al., ruthenium isotopes: Chicxulub impactor was a C-type asteroid from beyond Jupiter (Science 385, 752)",
+          "outlet": "Scientific American (coverage of Science paper)",
+          "date": "2024-08",
+          "url": "https://www.scientificamerican.com/article/asteroid-that-killed-the-dinosaurs-came-from-beyond-jupiter/"
+        }
+      ]
+    },
+    {
+      "n": 62,
+      "short": "Napier & Clube, Nature 1979: A theory of terrestrial catastrophism",
+      "available": "yes",
+      "grade": "academic",
+      "still_ok": "dated",
+      "why": "DOI resolves (200). Early cometary-catastrophism case, 1979. Historical, not current science."
+    },
+    {
+      "n": 63,
+      "short": "Space.com, 'Nemesis Star Theory' (accessed 5 Jan 2024)",
+      "available": "yes",
+      "grade": "secondary",
+      "still_ok": "superseded",
+      "why": "Hypothesis of a dwarf-star companion: NASA WISE (Luhman 2014) found no Saturn-mass or larger object to 10,000 au, no object larger than Jupiter to 26,000 au. A faint substellar variant is not fully excluded (reviewer's wording). Say 'not found, unlikely', not 'disproved'. Space.com page body would not load for us.",
+      "newer": [
+        {
+          "title": "WISE satellite finds no evidence for Planet X in survey of sky (Luhman 2014)",
+          "outlet": "Penn State News",
+          "date": "2014-03-07",
+          "url": "https://news.psu.edu/story/307018/2014/03/07/science-and-technology/wise-satellite-finds-no-evidence-planet-x-survey-sky"
+        }
+      ]
+    },
+    {
+      "n": 64,
+      "short": "Popova et al., Science 2013: Chelyabinsk airburst",
+      "available": "print",
+      "grade": "academic",
+      "still_ok": "yes",
+      "why": "Still the reference paper for the 15 Feb 2013 airburst (not opened today). A June 2025 article reported origin in the Flora family (secondary, date unclear)."
+    },
+    {
+      "n": 65,
+      "short": "RBC (Russia), 18 Feb 2013: Chelyabinsk injured near 1,500",
+      "available": "yes-bot-blocked",
+      "grade": "secondary",
+      "still_ok": "yes",
+      "why": "401 from my fetch: block/auth, not dead. Number (about 1,500 injured, mostly from glass) matches the widely reported figure. News source, Russian-language; cite alongside Popova 2013 or ESA/NASA."
+    },
+    {
+      "n": 66,
+      "short": "Farinella et al., A&A 2001: Tunguska body's asteroidal origin",
+      "available": "print",
+      "grade": "academic",
+      "still_ok": "contested",
+      "why": "2001 dynamical argument. A 2020 preprint (Khrennikov et al.) proposes an iron grazer that left the atmosphere; Mark Boslough doubts its shock-wave physics. Unsettled.",
+      "newer": [
+        {
+          "title": "Meteor that blasted millions of trees in Siberia only 'grazed' Earth (Khrennikov et al. preprint, contested)",
+          "outlet": "Space.com",
+          "date": "2020-11",
+          "url": "https://space.com/tunguska-meteor-impact-explained.html"
+        }
+      ]
+    },
+    {
+      "n": 67,
+      "short": "Pew, Jul 2023: Americans' views of space, NASA priorities",
+      "available": "yes",
+      "grade": "primary",
+      "still_ok": "dated",
+      "why": "Survey of 10,329 adults, 30 May-4 Jun 2023. Top NASA priority: monitoring asteroids; only 12% said crewed Moon landing top priority; 47% said private companies make important contributions, 40% unsure. Still Pew's newest dedicated space survey as far as we found. Opportunity: public ranks planetary defense first, budget does not."
+    },
+    {
+      "n": 68,
+      "short": "Chapman 1998 House testimony; NASA Authorization Act 2005 (George E. Brown NEO Survey)",
+      "available": "dead",
+      "grade": "primary",
+      "still_ok": "dated",
+      "why": "Chapman URL returns 404 on boulder.swri.edu and www.boulder.swri.edu (3 Nov 2026); archive.org blocked for us, so no archive URL. govinfo PLAW-109publ155 loads (200). The Act's Sec. 321 survey goal (from the Act text, which we did not re-read today) was 90% of NEOs 140 m+ by 2020; that goal was not met, and a 2025 NASA OIG report says NEO Surveyor slipped from 2026 to 2028 and from $1B to $1.6B (via search summary, verify). NEO Surveyor now NET Sep 2027 per one May 2026 aggregator (NASA page not found).",
+      "newer": [
+        {
+          "title": "NEO Surveyor mission page",
+          "outlet": "LASP, University of Colorado",
+          "date": "(undated; NET Sept 2027 per a May 2026 aggregator, not NASA)",
+          "url": "https://lasp.colorado.edu/missions/neo-surveyor/"
+        },
+        {
+          "title": "Pan-STARRS search for near-Earth objects (>40% of new NEO discoveries per abstract as reported)",
+          "outlet": "Proc. IAU / Cambridge",
+          "date": "2025-12",
+          "url": "https://resolve.cambridge.org/core/journals/proceedings-of-the-international-astronomical-union/article/panstarrs-search-for-nearearth-objects/3C3317708E8B161E551C0CD2531B2D74"
+        }
+      ]
+    },
+    {
+      "n": 69,
+      "short": "Catalina Sky Survey, LPL Univ. of Arizona (accessed Jul 2023)",
+      "available": "yes",
+      "grade": "primary",
+      "still_ok": "yes",
+      "why": "Site loads. Survey is still the lead for pre-impact detections: 2026 RW1 (6 Sep 2026, about 6 h warning, Indian Ocean; reported as the 13th detected before impact, secondary count).",
+      "newer": [
+        {
+          "title": "Asteroid 2026 RW1: spotted hours before impact (Catalina, Mount Lemmon)",
+          "outlet": "Sky at Night Magazine (secondary)",
+          "date": "2026-09-06",
+          "url": "https://skyatnightmagazine.com/news/asteroid-2026-rw1-impact"
+        },
+        {
+          "title": "Catalina Sky Survey predicted impact of small asteroid over Ontario",
+          "outlet": "Lunar and Planetary Laboratory, U Arizona",
+          "date": "2022",
+          "url": "https://www.lpl.arizona.edu/news/spotlight/nasa-program-predicted-impact-small-asteroid-over-ontario-canada"
+        }
+      ]
+    }
+  ]
+}

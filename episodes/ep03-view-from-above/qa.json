@@ -1,0 +1,934 @@
+{
+  "episode": "EP03",
+  "chapter": "Chapter 9, The View from Above",
+  "checked": "2026-11-03",
+  "sections": [
+    {
+      "id": "A",
+      "title": "Earth weather from space: the data and who pays",
+      "items": [
+        {
+          "id": "A1",
+          "q": "What does NOAA do, does it publish its data in a repository, and can the data be mined for predictions?",
+          "found": "Yes, but not mainly on GitHub. NOAA puts its data on Amazon, Google and Microsoft clouds through its Open Data Dissemination program. That includes forecast models such as HRRR and satellite data from GOES-16 to GOES-19. GitHub holds the code: the NOAA-EMC account hosts the workflow behind its global forecast systems (GFS, GEFS, SFS) under an open licence. Anyone can build on both. NOAA's own forecast is the free starting point.",
+          "build": "Sell a local or sector layer on top of the free model output: alerts tuned to one business decision, not another copy of the national forecast.",
+          "sources": [
+            {
+              "label": "NOAA Open Data Dissemination program",
+              "url": "https://www.noaa.gov/information-technology/open-data-dissemination",
+              "grade": "primary"
+            },
+            {
+              "label": "NOAA NODD dataset list",
+              "url": "https://www.noaa.gov/nodd/datasets",
+              "grade": "primary"
+            },
+            {
+              "label": "NOAA-EMC on GitHub",
+              "url": "https://github.com/NOAA-EMC",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "A2",
+          "q": "Which weather and Earth-observation data sources are open, which are paid, and how do you connect them?",
+          "found": "Open: NOAA's cloud datasets; ECMWF's real-time IFS and AIFS forecasts, free under a CC-BY-4.0 licence that allows commercial use with credit; NASA Earthdata, under a full and open sharing policy; and Copernicus Sentinel data, free through the Data Space Ecosystem. Paid: Planet sells daily soil water content and land surface temperature at 1 km, and crop biomass at 10 m. Hydrosat sells thermal infrared data and analytics. Start free, then buy the one paid feed that fills a gap.",
+          "build": "A connector that pulls the free feeds into one customer dashboard, then adds a single paid layer the customer actually needs.",
+          "sources": [
+            {
+              "label": "NOAA NODD dataset list",
+              "url": "https://www.noaa.gov/nodd/datasets",
+              "grade": "primary"
+            },
+            {
+              "label": "ECMWF open data",
+              "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data",
+              "grade": "primary"
+            },
+            {
+              "label": "NASA Earthdata data and information policy",
+              "url": "https://www.earthdata.nasa.gov/engage/open-data-services-and-software/data-and-information-policy",
+              "grade": "primary"
+            },
+            {
+              "label": "Copernicus Data Space Ecosystem",
+              "url": "https://dataspace.copernicus.eu/",
+              "grade": "primary"
+            },
+            {
+              "label": "Planet, Planetary Variables",
+              "url": "https://www.planet.com/products/planetary-variables/",
+              "grade": "primary"
+            },
+            {
+              "label": "Hydrosat",
+              "url": "https://hydrosat.com",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "A3",
+          "q": "My phone gives me a good-enough forecast in seconds. Who pays for something better, how much, and for what?",
+          "found": "Buyers pay for data tied to a decision. NOAA buys radio-occultation data: in March 2023 it signed two five-year contracts with PlanetiQ and Spire worth up to $59.3 million in total. Planet says it supplies soil water content data in 17 countries, working with reinsurers to protect farmers from drought. Tomorrow.io's Series F reached $210 million, with an insurer, Harel, in the round. Hydrosat raised €51 million ($60 million) in January 2026 for field-level crop data.",
+          "build": "Pick one paying decision (irrigation, crop insurance, outdoor work) and sell the forecast that answers it, with its error shown.",
+          "sources": [
+            {
+              "label": "NOAA Office of Space Commerce, RODB-2 delivery order",
+              "url": "https://space.commerce.gov/noaa-awards-3rd-delivery-order-under-radio-occultation-data-buy-ii/",
+              "grade": "primary"
+            },
+            {
+              "label": "Planet, Planetary Variables",
+              "url": "https://www.planet.com/products/planetary-variables/",
+              "grade": "primary"
+            },
+            {
+              "label": "Built In, Tomorrow.io Series F extension (May 2026)",
+              "url": "https://builtin.com/articles/tomorrowio-series-f-extension-210m-20260520",
+              "grade": "secondary"
+            },
+            {
+              "label": "SmallSat News, Hydrosat Series B (15 Jan 2026)",
+              "url": "https://smallsatnews.com/2026/01/15/hydrosat-secures-e51-million-series-b-to-expand-thermal-imagery-constellation/",
+              "grade": "secondary"
+            }
+          ]
+        },
+        {
+          "id": "A4",
+          "q": "Which company gives farmers precise soil moisture from space (the host recalled \"Space Tangle\"), and how precise is it?",
+          "found": "The name is a mix-up. Space Tango is a Kentucky microgravity research and manufacturing company. It has supported over 300 experiments on about 40 missions to the Space Station. On 25 June 2026 Kentucky's governor announced a $7.4 million expansion of its Lexington headquarters. Soil moisture from space is sold by others. Hydrosat sells field-level soil moisture and crop data from thermal satellites. Planet sells soil water content near-daily at 1 km resolution, built on passive microwave data.",
+          "build": "Ground-truth service: check satellite soil moisture against in-field probes for growers and insurers, and publish the error.",
+          "sources": [
+            {
+              "label": "Kentucky Governor's office release, 25 Jun 2026",
+              "url": "https://www.kentucky.gov/Pages/Activity-stream.aspx?n=GovernorBeshear&prId=2779",
+              "grade": "primary"
+            },
+            {
+              "label": "Space Tango, About",
+              "url": "https://spacetango.com/about/",
+              "grade": "primary"
+            },
+            {
+              "label": "SmallSat News, Hydrosat Series B (15 Jan 2026)",
+              "url": "https://smallsatnews.com/2026/01/15/hydrosat-secures-e51-million-series-b-to-expand-thermal-imagery-constellation/",
+              "grade": "secondary"
+            },
+            {
+              "label": "Planet docs, Soil Water Content",
+              "url": "https://docs.planet.com/data/planetary-variables/soil-water-content/",
+              "grade": "primary"
+            },
+            {
+              "label": "Planet to acquire VanderSat (10 Nov 2021)",
+              "url": "https://www.planet.com/pulse/planet-to-acquire-vandersat-to-deliver-advanced-agriculture-data-products-to-customers",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "A5",
+          "q": "What severe phenomena does space now track, El Niño and what else, and who pays for the tracking?",
+          "found": "On 8 October 2026 NOAA's Climate Prediction Center kept its El Niño Advisory, with Niño-3.4 at +2.1°C. It gave a better than 83% chance of a strong-to-very-strong event through January to March 2027. Wildfire is the newest lane: the first three operational FireSat satellites launched on 7 July 2026. FireSat is backed by the Bezos Earth Fund, Google.org and the Moore Foundation. NOAA also tracks space weather, as in the January 2026 radiation storm.",
+          "build": "Turn public El Niño and fire alerts into plain, local briefings for farms, utilities or insurers.",
+          "sources": [
+            {
+              "label": "NOAA CPC ENSO diagnostic discussion, 8 Oct 2026",
+              "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.html",
+              "grade": "primary"
+            },
+            {
+              "label": "Muon Space, first three operational FireSat satellites (7 Jul 2026)",
+              "url": "https://www.muonspace.com/muon-space-deploys-first-three-operational-firesat-satellites-for-earth-fire-alliance/",
+              "grade": "primary"
+            },
+            {
+              "label": "NOAA SWPC, S4 radiation storm, 19 Jan 2026",
+              "url": "https://www.spaceweather.gov/news/s4-severe-solar-radiation-storm-progress-january-19th-2026",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "A6",
+          "q": "Does GPS radio occultation feed long-range climate models, who sells it, and can it model 300–500 km for drag?",
+          "found": "Radio occultation is real and useful. UCAR lists three uses: weather forecasting, climate monitoring and model checks, and space weather. Its profiles give temperature, pressure and water vapour in the air, and electron density in the ionosphere. About 80% reach weather centres within 3 hours. We found no source for the book's claim that it supplies most climate-model data. Spire and PlanetiQ sell it to NOAA. Air density at 300–500 km, the drag number, is not among those products.",
+          "build": "A drag product needs its own density data; radio occultation can be a cross-check, not the source.",
+          "sources": [
+            {
+              "label": "UCAR COSMIC, GNSS radio occultation",
+              "url": "https://www.cosmic.ucar.edu/what-we-do/gnss-radio-occultation",
+              "grade": "primary"
+            },
+            {
+              "label": "UCAR COSMIC-2",
+              "url": "https://www.cosmic.ucar.edu/what-we-do/cosmic-2/",
+              "grade": "primary"
+            },
+            {
+              "label": "UCAR COSMIC Data Processing Center",
+              "url": "https://www.cosmic.ucar.edu/what-we-do/data-processing-center",
+              "grade": "primary"
+            },
+            {
+              "label": "NOAA Office of Space Commerce, RODB-2 delivery order",
+              "url": "https://space.commerce.gov/noaa-awards-3rd-delivery-order-under-radio-occultation-data-buy-ii/",
+              "grade": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Space weather",
+      "items": [
+        {
+          "id": "B1",
+          "q": "Can we chart the major solar storms, and where do the book's storm probabilities come from?",
+          "found": "Key storms: 1859 Carrington; 1989, when Québec lost power for nine hours; October 2003; a near miss on 23 July 2012 (a CME at 2,500 km/s, aimed away from Earth); and January 2026, when a radiation storm beat 2003. A 2024 USGS study puts Carrington at about -866 to -964 nT. The odds are model outputs: a 2017 study gave 10.3% per decade under one statistical fit, 3.0% under another. Lloyd's cited a Carrington return period of about 150 years.",
+          "build": "A plain, sourced storm-odds explainer for operators, showing the range rather than one number.",
+          "sources": [
+            {
+              "label": "USGS, uncertain intensity of the 1859 Carrington storm (2024)",
+              "url": "https://www.usgs.gov/publications/uncertain-intensity-estimate-1859-carrington-storm",
+              "grade": "primary"
+            },
+            {
+              "label": "Insurance Journal on the Lloyd's 2013 solar storm report",
+              "url": "https://www.insurancejournal.com/news/international/2013/05/23/293060.htm",
+              "grade": "secondary"
+            },
+            {
+              "label": "NASA NTRS, the July 2012 solar eruptive event",
+              "url": "https://ntrs.nasa.gov/citations/20180003269",
+              "grade": "primary"
+            },
+            {
+              "label": "NOAA SWPC, S4 radiation storm, 19 Jan 2026",
+              "url": "https://www.spaceweather.gov/news/s4-severe-solar-radiation-storm-progress-january-19th-2026",
+              "grade": "primary"
+            },
+            {
+              "label": "USGS record, 2017 Space Weather paper on Carrington-class storm odds",
+              "url": "https://pubs.usgs.gov/publication/70191830",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "B2",
+          "q": "Carrington's CME hit about 18 hours later. What physics sets arrival time?",
+          "found": "Arrival time is distance divided by average speed. Carrington's CME is estimated to have covered about 150 million km in 17.6 hours, an average near 2,400 km/s. NOAA says CMEs range from under 250 km/s to nearly 3,000 km/s. The fastest Earth-directed ones arrive in 15–18 hours; slower ones take several days. One explanation for Carrington's speed: an earlier CME may have cleared the way.",
+          "build": "An arrival-time calculator that shows the uncertainty window for one customer's assets.",
+          "sources": [
+            {
+              "label": "Wikipedia, Carrington Event",
+              "url": "https://en.wikipedia.org/wiki/Carrington_Event",
+              "grade": "secondary"
+            },
+            {
+              "label": "NOAA SWPC, coronal mass ejections",
+              "url": "https://www.spaceweather.gov/phenomena/coronal-mass-ejections",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "B3",
+          "q": "Beyond the Sun, what is space weather: cosmic rays and more? Effects at GEO, LEO and the Moon, and what we can do.",
+          "found": "Three things hit hardware. Low-energy electrons charge spacecraft surfaces. High-energy electrons charge the inside. Solar particles and galactic cosmic rays, from outside the solar system, cause single-event upsets in electronics and add up total dose (NASA). Geostationary satellites face extra risk in big radiation storms, NOAA said in January 2026. For crews near the Moon, NASA's Orion carries six radiation sensors, and a high dose reading triggers a shelter recommendation.",
+          "build": "Radiation and charging checks for small-satellite builders, written for owners rather than physicists.",
+          "sources": [
+            {
+              "label": "NASA NTRS, space radiation and plasma effects",
+              "url": "https://ntrs.nasa.gov/citations/20190034185",
+              "grade": "primary"
+            },
+            {
+              "label": "NOAA SWPC, S4 radiation storm, 19 Jan 2026",
+              "url": "https://www.spaceweather.gov/news/s4-severe-solar-radiation-storm-progress-january-19th-2026",
+              "grade": "primary"
+            },
+            {
+              "label": "NASA, protecting Artemis II astronauts from the Sun",
+              "url": "https://science.nasa.gov/missions/artemis/artemis-2/to-protect-artemis-ii-astronauts-nasa-experts-keep-eyes-on-sun/",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "B4",
+          "q": "Are DSCOVR, ACE and SOHO still working in 2025–26, what replaced them, and is ESA's Vigil coming?",
+          "found": "The fleet changed this year. NOAA's SOLAR-1 (launched as SWFO-L1 on 24 September 2025) reached L1 on 23 January 2026 and went operational on 10 June 2026. NOAA's space weather centre now uses SOLAR-1 as its primary solar-wind source, with ACE as backup. It has stopped processing DSCOVR data. So DSCOVR is no longer NOAA's main L1 source. ESA lists SOHO, launched 1995, as operational. ESA plans to launch Vigil to L5 in 2031.",
+          "build": "Downstream tools that read the new SOLAR-1 feed and translate it for satellite and grid operators.",
+          "sources": [
+            {
+              "label": "NOAA NESDIS, SOLAR-1 reaches L1 (27 Jan 2026)",
+              "url": "https://www.nesdis.noaa.gov/news/swfo-l1-renamed-solar-1-reaches-final-destination-one-million-miles-earth",
+              "grade": "primary"
+            },
+            {
+              "label": "NOAA OSPO, SOLAR-1 status",
+              "url": "https://ospo.noaa.gov/operations/swfo/status.html",
+              "grade": "primary"
+            },
+            {
+              "label": "NOAA SWPC, solar wind data and display changes",
+              "url": "https://swpc-drupal.woc.noaa.gov/news/solar-wind-data-and-display-changes",
+              "grade": "primary"
+            },
+            {
+              "label": "ESA, SOHO",
+              "url": "https://www.esa.int/Science_Exploration/Space_Science/SOHO",
+              "grade": "primary"
+            },
+            {
+              "label": "ESA, Vigil mission overview",
+              "url": "https://www.esa.int/Space_Safety/Vigil/Vigil_mission_overview",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "B5",
+          "q": "How much warning do we get, and who holds the information?",
+          "found": "Fast CMEs reach Earth in 15–18 hours; slower ones take several days. The last, firmest warning comes from spacecraft at L1. NOAA says they often give 15 to 60 minutes' notice before the shock arrives. NOAA's Space Weather Prediction Center is the official US source of space weather alerts and warnings, as CISA notes. ESA says Vigil, planned for 2031, could give up to four to five days' notice.",
+          "build": "An alert service that turns the public warning into a 'what to do in the next hour' checklist for one asset type.",
+          "sources": [
+            {
+              "label": "NOAA SWPC, coronal mass ejections",
+              "url": "https://www.spaceweather.gov/phenomena/coronal-mass-ejections",
+              "grade": "primary"
+            },
+            {
+              "label": "CISA, space systems",
+              "url": "https://www.cisa.gov/space-systems",
+              "grade": "primary"
+            },
+            {
+              "label": "ESA, Vigil mission overview",
+              "url": "https://www.esa.int/Space_Safety/Vigil/Vigil_mission_overview",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "B6",
+          "q": "What is CISA doing on space weather and space assets, and who owns protection?",
+          "found": "CISA's risk centre co-chairs SWORM, the federal space weather coordination group. It leads updated storm benchmarks and works with governments, insurers and the private sector. CISA's page says space weather, unlike an EMP attack, is inevitable. The PROSWIFT Act (2020) set up a federal space weather advisory group. The first national end-to-end space weather tabletop ran on 8–9 May 2024. Ready.gov notes storms can induce currents that disrupt power lines.",
+          "build": "Help small infrastructure owners map their exposure to the federal benchmarks.",
+          "sources": [
+            {
+              "label": "CISA, space weather",
+              "url": "https://www.cisa.gov/space-weather",
+              "grade": "primary"
+            },
+            {
+              "label": "PROSWIFT Act, Public Law 116-181",
+              "url": "https://www.govinfo.gov/content/pkg/PLAW-116publ181/html/PLAW-116publ181.htm",
+              "grade": "primary"
+            },
+            {
+              "label": "NOAA SWPC, after-action report of the 2024 space weather exercise",
+              "url": "https://www.spaceweather.gov/news/after-action-report-2024-space-weather-simulation-exercise",
+              "grade": "primary"
+            },
+            {
+              "label": "Ready.gov, space weather",
+              "url": "https://www.ready.gov/space-weather",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "B7",
+          "q": "Can I insure my house or car against a solar storm, and how do companies with ground assets insure?",
+          "found": "Untested for homes. Progressive says standard policies may cover power surges from lightning, but often not surges from faulty wiring. The page does not mention geomagnetic storms. Lloyd's 2013 report said a Carrington-level storm could cut power to 20–40 million Americans for weeks to two years, costing $0.6–2.6 trillion. Lloyd's 2025 scenario puts global losses at $2.4 trillion over five years, with an expected loss of $17 billion. We found no source on car or military cover.",
+          "build": "A policy-wording check that shows a business owner which storm losses their cover would and would not pay.",
+          "sources": [
+            {
+              "label": "Progressive, does homeowners insurance cover power surges?",
+              "url": "https://www.progressive.com/answers/power-surges/",
+              "grade": "primary"
+            },
+            {
+              "label": "Insurance Journal on the Lloyd's 2013 solar storm report",
+              "url": "https://www.insurancejournal.com/news/international/2013/05/23/293060.htm",
+              "grade": "secondary"
+            },
+            {
+              "label": "Lloyd's, extreme space weather scenario (Mar 2025)",
+              "url": "https://www.lloyds.com/insights/media-centre/press-releases/extreme-space-weather-scenario",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "B8",
+          "q": "What if a company loses phones for hours, or malware takes systems down? Which scenarios should it plan for?",
+          "found": "Start with the free tools. CISA's Tabletop Exercise Packages are customisable drills with objectives, scenarios and discussion questions, covering threats from natural disasters to industrial control systems. Ready.gov's business pages cover communications, IT recovery and continuity planning, plus home outage preparation. Big operators already drill: over 370 organisations joined the GridEx VIII grid exercise in November 2025. The EIS Council runs Black Sky drills for long, widespread outages. CISA notes space weather is a different threat from EMP.",
+          "build": "Half-day outage drills for small firms that are not in GridEx, built on CISA's free exercise packages.",
+          "sources": [
+            {
+              "label": "CISA Tabletop Exercise Packages",
+              "url": "https://www.cisa.gov/resources-tools/services/cisa-tabletop-exercise-packages",
+              "grade": "primary"
+            },
+            {
+              "label": "Ready.gov, Ready Business",
+              "url": "https://www.ready.gov/business",
+              "grade": "primary"
+            },
+            {
+              "label": "Ready.gov, power outages",
+              "url": "https://www.ready.gov/power-outages",
+              "grade": "primary"
+            },
+            {
+              "label": "SecurityWeek, GridEx VIII (21 Nov 2025)",
+              "url": "https://www.securityweek.com/over-370-organizations-take-part-in-gridex-viii-grid-security-exercise/",
+              "grade": "secondary"
+            },
+            {
+              "label": "EIS Council, what is a Black Sky exercise",
+              "url": "https://eiscouncil.org/what-is-a-black-sky-exercise/",
+              "grade": "primary"
+            },
+            {
+              "label": "CISA, space weather",
+              "url": "https://www.cisa.gov/space-weather",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "B9",
+          "q": "What must Artemis astronauts watch for in space weather compared with Apollo?",
+          "found": "For Artemis II, a NASA Goddard office tracks every solar eruption and passes its analysis to the radiation team at Johnson. NOAA adds forecasts. NASA even used the Perseverance rover on Mars to spot large sunspots up to two weeks before they face Earth. Inside Orion, six sensors and personal dosimeters track dose. One threshold triggers closer watch; a higher one triggers a shelter recommendation. We found no source comparing this with Apollo, so we leave that open.",
+          "build": "A forecast and dose-alarm service for commercial lunar landers and payloads.",
+          "sources": [
+            {
+              "label": "NASA, protecting Artemis II astronauts from the Sun",
+              "url": "https://science.nasa.gov/missions/artemis/artemis-2/to-protect-artemis-ii-astronauts-nasa-experts-keep-eyes-on-sun/",
+              "grade": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Lagrange points and the sunshade",
+      "items": [
+        {
+          "id": "C1",
+          "q": "Why do spacecraft park at Lagrange points, how many are there, and do they need station-keeping?",
+          "found": "NASA counts five Lagrange points, where a small object keeps pace with two large bodies. L4 and L5 are stable. L1, L2 and L3 are not: ESA likens them to a ball on a hilltop, so spacecraft fly halo orbits and fire thrusters often. Webb is not parked: it circles L2 every 168 days, between about 250,000 and 830,000 km from the point. NASA said in 2021 it had fuel for well over ten years.",
+          "sources": [
+            {
+              "label": "NASA, what is a Lagrange point",
+              "url": "https://science.nasa.gov/resource/what-is-a-lagrange-point/",
+              "grade": "primary"
+            },
+            {
+              "label": "ESA, what are Lagrange points",
+              "url": "https://www.esa.int/Enabling_Support/Operations/What_are_Lagrange_points",
+              "grade": "primary"
+            },
+            {
+              "label": "NASA, Webb's orbit at L2",
+              "url": "https://science.nasa.gov/asset/webb/webbs-orbit-at-sun-earth-lagrange-point-2-l2/",
+              "grade": "primary"
+            },
+            {
+              "label": "NASA Webb blog, excess fuel (29 Dec 2021)",
+              "url": "https://science.nasa.gov/blogs/webb/2021/12/29/nasa-says-webbs-excess-fuel-likely-to-extend-its-lifetime-expectations",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "q": "Who owns the parking rights at a Lagrange point, and who decides what you can do there?",
+          "found": "No one assigns slots. The Outer Space Treaty says outer space is not subject to national appropriation by claim of sovereignty, use or occupation (Article II). It also asks states to act with cooperation and due regard (Article IX). The ITU recommends a 250,000 km radio-quiet coordination zone around L2, but that covers radio, not position. A 2025 law journal article argues Lagrange points should be treated as the common heritage of mankind.",
+          "build": "Regulatory and frequency-filing help for small teams planning missions to L1 or L2.",
+          "sources": [
+            {
+              "label": "UNOOSA, Outer Space Treaty text",
+              "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/outerspacetreaty.html",
+              "grade": "primary"
+            },
+            {
+              "label": "ITU-R Recommendation RA.1417-1, radio-quiet zone near L2",
+              "url": "https://www.itu.int/dms_pubrec/itu-r/rec/ra/R-REC-RA.1417-1-201312-I!!PDF-E.pdf",
+              "grade": "primary"
+            },
+            {
+              "label": "Michigan Journal of International Law, Lagrange points as common heritage (2025)",
+              "url": "https://repository.law.umich.edu/mjil/vol46/iss3/3",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "q": "How big is a Lagrange point region, could it hold a station, and does it move?",
+          "found": "The point is a spot in the maths; spacecraft use the region around it. Webb's loop around L2 ranges from about 250,000 to 830,000 km from the point. The ITU's protected zone around L2 has a 250,000 km radius. The points move with Earth: a spacecraft at L2 keeps pace with Earth's orbit around the Sun (ESA). Any station at L1 or L2 would need the same frequent thruster firings as today's spacecraft. We found no planned station there.",
+          "sources": [
+            {
+              "label": "NASA, Webb's orbit at L2",
+              "url": "https://science.nasa.gov/asset/webb/webbs-orbit-at-sun-earth-lagrange-point-2-l2/",
+              "grade": "primary"
+            },
+            {
+              "label": "ITU-R Recommendation RA.1417-1, radio-quiet zone near L2",
+              "url": "https://www.itu.int/dms_pubrec/itu-r/rec/ra/R-REC-RA.1417-1-201312-I!!PDF-E.pdf",
+              "grade": "primary"
+            },
+            {
+              "label": "ESA, what are Lagrange points",
+              "url": "https://www.esa.int/Enabling_Support/Operations/What_are_Lagrange_points",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "q": "A sunshade at L1 to filter sunlight: who proposed it, what would it cost, and who would control the weather?",
+          "found": "The best-known design is a 2006 PNAS paper from the University of Arizona. It would block 1.8% of sunlight with a cloud of one-gram 'flyers', about 20 million tons in total. They would launch in stacks of 800,000 and fill a cloud 100,000 km long. It estimated about 25 years and a few trillion dollars. On control: no body governs it. The Outer Space Treaty bars any nation from claiming outer space, but sets no rules for shading Earth.",
+          "sources": [
+            {
+              "label": "PNAS 2006, cooling the Earth with spacecraft near L1 (PMC)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1859907/",
+              "grade": "primary"
+            },
+            {
+              "label": "UNOOSA, Outer Space Treaty text",
+              "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/outerspacetreaty.html",
+              "grade": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Planetary defense",
+      "items": [
+        {
+          "id": "D1",
+          "q": "Is Spaceguard still working? The 1 km goal was met in 2011. What is the 140 m target now?",
+          "found": "The 1 km goal was met: in 2011 NASA's WISE data showed at least 90% of large near-Earth asteroids found. The 2005 law then set 90% of objects 140 m or larger within 15 years, so by 2020. That was missed. A 2023 study put completeness at about 38% for 140 m and up. NASA's database lists 43,047 known near-Earth objects today. NEO Surveyor, built to close the gap, launches no earlier than September 2027.",
+          "build": "Follow-up observation and orbit software that sells into the gap Congress set but did not fund on time.",
+          "sources": [
+            {
+              "label": "VOA on NASA's 2011 WISE asteroid count",
+              "url": "https://www.voanews.com/a/nasas-asteroid-hunter-finds-fewer-planet-buster-asteroids-than-predicted-130823623/173727.html",
+              "grade": "secondary"
+            },
+            {
+              "label": "George E. Brown, Jr. NEO Survey Act, Public Law 109-155",
+              "url": "https://www.govinfo.gov/content/pkg/PLAW-109publ155/html/PLAW-109publ155.htm",
+              "grade": "primary"
+            },
+            {
+              "label": "Grav et al. 2023, Planetary Science Journal",
+              "url": "https://iopscience.iop.org/article/10.3847/PSJ/ad072e",
+              "grade": "primary"
+            },
+            {
+              "label": "JPL SBDB Query API (live count of known NEOs)",
+              "url": "https://ssd-api.jpl.nasa.gov/sbdb_query.api?sb-group=neo&fields=full_name&limit=1",
+              "grade": "primary"
+            },
+            {
+              "label": "NASA, NEO Surveyor",
+              "url": "https://science.nasa.gov/mission/neo-surveyor/",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "D2",
+          "q": "Who looks for dangerous asteroids: PDCO, Catalina, ATLAS, Pan-STARRS?",
+          "found": "NASA's Planetary Defense Coordination Office funds the surveys. Catalina Sky Survey (University of Arizona) is NASA-funded and has found 17,940 near-Earth asteroids since 1995, 663 of them in 2026. ATLAS (University of Hawaii, NASA-funded) runs telescopes in Hawaii, Chile and South Africa, and reported data from a Tenerife unit in June 2026. NASA describes Pan-STARRS1 as funded by its NEO Observations program. The Rubin Observatory added over 11,000 new asteroids in April 2026.",
+          "build": "Software and data services for survey teams; the telescopes are grant-funded, the tools around them are open to small firms.",
+          "sources": [
+            {
+              "label": "Catalina Sky Survey",
+              "url": "https://catalina.lpl.arizona.edu/",
+              "grade": "primary"
+            },
+            {
+              "label": "ATLAS, University of Hawaii",
+              "url": "https://atlas.fallingstar.com/",
+              "grade": "primary"
+            },
+            {
+              "label": "NASA GCN Circular 44910 (ATLAS-Teide, Jun 2026)",
+              "url": "https://gcn.nasa.gov/circulars/44910",
+              "grade": "primary"
+            },
+            {
+              "label": "NASA, 'Oumuamua",
+              "url": "https://science.nasa.gov/solar-system/comets/oumuamua/",
+              "grade": "primary"
+            },
+            {
+              "label": "Rubin Observatory, over 11,000 new asteroids (2 Apr 2026)",
+              "url": "https://rubinobservatory.org/news/11000-new-asteroids",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "D3",
+          "q": "What if 'Oumuamua was a spacecraft? What are we tracking now?",
+          "found": "Pan-STARRS1 found 'Oumuamua on 19 October 2017. In 2019 a team of 14 experts concluded it has a natural origin. In 2023 NSF-backed researchers explained its odd push as hydrogen escaping from ice. A 2025 preprint argued 3I/ATLAS could be technology, but called itself largely a pedagogical exercise. NASA calls 3I/ATLAS a comet; it posed no threat and passed closest to the Sun around 30 October 2025. 2I/Borisov, found by an amateur in 2019, was the first confirmed interstellar comet.",
+          "sources": [
+            {
+              "label": "NASA, 'Oumuamua",
+              "url": "https://science.nasa.gov/solar-system/comets/oumuamua/",
+              "grade": "primary"
+            },
+            {
+              "label": "University of Hawaii IfA, 'Oumuamua is not an alien spacecraft (2019)",
+              "url": "https://www.ifa.hawaii.edu/2019/07/%CA%BBoumuamua-is-not-an-alien-spacecraft/",
+              "grade": "primary"
+            },
+            {
+              "label": "NSF, hydrogen explains 'Oumuamua's push (2023)",
+              "url": "https://www.nsf.gov/news/alien-comet-oumuamuas-weird-orbit-may-have-surprisingly",
+              "grade": "primary"
+            },
+            {
+              "label": "arXiv 2507.12213, is 3I/ATLAS alien technology?",
+              "url": "https://arxiv.org/abs/2507.12213",
+              "grade": "primary"
+            },
+            {
+              "label": "NASA, Comet 3I/ATLAS",
+              "url": "https://science.nasa.gov/solar-system/comets/3i-atlas/",
+              "grade": "primary"
+            },
+            {
+              "label": "NASA, Comet 2I/Borisov",
+              "url": "https://science.nasa.gov/solar-system/comets/2i-borisov/",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "D4",
+          "q": "Does B612 still run open-source tools, and which open asteroid data repositories exist?",
+          "found": "Yes. B612's Asteroid Institute runs ADAM, with tools for precovery (finding objects in old images), impact probability, trajectory design and ephemerides. It publishes open code (ADAM Core, Precovery, THOR, MPCQ, Quivr) and a free BigQuery copy of Minor Planet Center data. NASA JPL offers free APIs: one returns lists and counts of small bodies, another the fireball record. These are the main open doors for an outside team.",
+          "build": "Run the open orbit-linking code on new survey data and offer candidate vetting as a service.",
+          "sources": [
+            {
+              "label": "Asteroid Institute, ADAM and open-source tools",
+              "url": "https://b612.ai/",
+              "grade": "primary"
+            },
+            {
+              "label": "JPL SBDB Query API documentation",
+              "url": "https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html",
+              "grade": "primary"
+            },
+            {
+              "label": "JPL CNEOS fireball API",
+              "url": "https://ssd-api.jpl.nasa.gov/fireball.api",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "D5",
+          "q": "Can AI find objects we have missed in the archives, and what is the Earth-like-planet project mentioned on Moonshots?",
+          "found": "Partly, and the famous number was not AI. The 27,500 new asteroid candidates (April 2024) came from THOR, a tracking algorithm, run over 5.4 billion archived observations. They are candidates, including over 100 near-Earth ones. B612 said it was exploring AI only to vet candidates. For planets, AI is real: the deep-learning model ExoMiner++ sorted 147,568 TESS signals and flagged 7,330 planet candidates. We found no XPRIZE page for a habitable-worlds prize.",
+          "build": "Better search over public archives: candidate vetting, ranking and follow-up lists.",
+          "sources": [
+            {
+              "label": "B612 press release, 27,500 asteroid candidates (30 Apr 2024)",
+              "url": "https://b612foundation.org/?p=29854",
+              "grade": "primary"
+            },
+            {
+              "label": "arXiv 2502.09790, ExoMiner++",
+              "url": "https://arxiv.org/abs/2502.09790",
+              "grade": "primary"
+            },
+            {
+              "label": "XPRIZE, current grand challenges",
+              "url": "https://www.xprize.org/prizes",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "D6",
+          "q": "Do we really know what is out there, what is withheld for national security, and do operators want the data?",
+          "found": "Some is public. NASA's fireball database comes from US government sensors; CNEOS does not verify these events. Today it holds 1,074 events, from April 1988 to October 2026. In 2022 US Space Command confirmed a 2014 meteor came from outside the solar system. Researchers had trouble publishing that finding because it relied on classified data. We found no published demand signal from commercial operators.",
+          "build": "Cleaned, cross-checked fireball catalogues and alerts; demand from operators is still to be tested.",
+          "sources": [
+            {
+              "label": "NASA CNEOS, fireball and bolide data",
+              "url": "https://cneos.jpl.nasa.gov/fireballs/",
+              "grade": "primary"
+            },
+            {
+              "label": "JPL CNEOS fireball API",
+              "url": "https://ssd-api.jpl.nasa.gov/fireball.api",
+              "grade": "primary"
+            },
+            {
+              "label": "CBS News, Space Command confirms interstellar meteor (15 Apr 2022)",
+              "url": "https://www.cbsnews.com/news/first-interstellar-meteor-to-hit-earth-solar-system-space-command/",
+              "grade": "secondary"
+            }
+          ]
+        },
+        {
+          "id": "D7",
+          "q": "Are we insured against an asteroid impact, the way we are for earthquakes or tornadoes?",
+          "found": "Probably yes by accident, not by design. After the 2013 Chelyabinsk meteor, catastrophe modeller AIR Worldwide said broad multi-peril policies generally cover all risks not specifically excluded. So meteorite damage would generally be covered, and so would falling objects if not excluded. We found no asteroid-specific insurance product or catastrophe model. NASA's 2024 YR4 scare ended with NASA saying the object poses no significant impact risk to Earth in 2032 and beyond.",
+          "build": "An airburst loss model built from NASA's open impact data; no insurer has validated one yet.",
+          "sources": [
+            {
+              "label": "Insurance Journal, AIR Worldwide on the Chelyabinsk meteor (18 Feb 2013)",
+              "url": "https://www.insurancejournal.com/news/international/2013/02/18/281645.htm",
+              "grade": "secondary"
+            },
+            {
+              "label": "NASA, asteroid 2024 YR4",
+              "url": "https://science.nasa.gov/solar-system/asteroids/2024-yr4/",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "D8",
+          "q": "DART proved we can hit an asteroid. What happened to the debris, and why isn't deflection predicted better?",
+          "found": "DART hit the 160 m moonlet Dimorphos on 26 September 2022 and cut its orbit by 33.0 ± 1.0 minutes. The debris mattered most. Dimorphos got 2.2 to 4.9 times the momentum DART carried (the factor called beta), because ejecta added to the push. The range is wide because Dimorphos's mass was unknown. That is why prediction is hard. ESA's Hera is due at the asteroids in November 2026 to survey the result.",
+          "build": "Simulation and target-characterisation tools: mass, shape and strength from cheap fly-bys.",
+          "sources": [
+            {
+              "label": "NASA, DART",
+              "url": "https://science.nasa.gov/mission/dart/",
+              "grade": "primary"
+            },
+            {
+              "label": "Thomas et al. 2023, Nature (PMC)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10115635/",
+              "grade": "primary"
+            },
+            {
+              "label": "Cheng et al. 2023, Nature (PMC)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10115652/",
+              "grade": "primary"
+            },
+            {
+              "label": "ESA, Hera",
+              "url": "https://www.esa.int/Space_Safety/Hera",
+              "grade": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "title": "NASA science",
+      "items": [
+        {
+          "id": "E1",
+          "q": "What is NASA science funding now, what is the Administrator pushing, and what changes for planetary defense and space weather?",
+          "found": "FY2026 Science was $7.25 billion. The FY2027 request, released 3 April 2026, would cut Science 46% to $3.89 billion and NASA 23%. The Planetary Society counts 53 missions likely ended, 17 of them in heliophysics, the science of the Sun and its effects. Stopgap funding runs flat to 11 December. On 21 October NASA's science chief wrote that the Administrator directed faster science through a new Competition Model 2.0. NEO Surveyor remains scheduled for no earlier than September 2027.",
+          "build": "Shorter selection cycles favour small, first-time teams; plan on flat funding until the December deadline passes.",
+          "sources": [
+            {
+              "label": "The Planetary Society, analysing the FY2027 NASA request",
+              "url": "https://www.planetary.org/articles/analyzing-the-fy-2027-nasa-budget-request",
+              "grade": "secondary"
+            },
+            {
+              "label": "The Planetary Society, Save NASA Science updates",
+              "url": "https://www.planetary.org/save-nasa-science",
+              "grade": "secondary"
+            },
+            {
+              "label": "NASA SMD, Faster to Science letter (21 Oct 2026)",
+              "url": "https://science.nasa.gov/directorates/smd/faster-to-science-a-letter-to-the-science-community/",
+              "grade": "primary"
+            },
+            {
+              "label": "NASA, NEO Surveyor",
+              "url": "https://science.nasa.gov/mission/neo-surveyor/",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "E2",
+          "q": "Who is studying how Mars lost its atmosphere?",
+          "found": "The host's framing needs an update: MAVEN, the orbiter that measured the loss, is gone. NASA lost contact on 6 December 2025 and declared the mission over on 3 June 2026, after more than 11 years at Mars. The active mission is ESCAPADE: two identical spacecraft launched 13 November 2025. They wait in a loop near the Sun-Earth L2 point. Then they slingshot past Earth in fall 2026 to study how the solar wind strips Mars's atmosphere.",
+          "build": "ESCAPADE shows the low-cost model: two small spacecraft and a commercial launch.",
+          "sources": [
+            {
+              "label": "NASA, MAVEN",
+              "url": "https://science.nasa.gov/mission/maven/",
+              "grade": "primary"
+            },
+            {
+              "label": "NASA, ESCAPADE",
+              "url": "https://science.nasa.gov/mission/escapade/",
+              "grade": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "title": "Earth weather: can we control it?",
+      "items": [
+        {
+          "id": "F1",
+          "q": "Do we have enough prediction models, who pays for accurate weather, and what does accuracy mean?",
+          "found": "Models are not the bottleneck. NOAA launched three AI models on 17 December 2025. One uses up to 99.7% less computing. Another adds 18 to 24 hours of forecast skill over the traditional ensemble. ECMWF's forecasts are free for commercial use with credit. Accuracy means a score against what actually happened, such as track error or extra lead time. Governments pay for the base. NOAA also buys commercial radio-occultation data under contracts worth up to $59.3 million.",
+          "build": "Independent verification: score free forecasts against local outcomes for one customer, and sell the trust.",
+          "sources": [
+            {
+              "label": "ForecastWatch, NOAA launches AI weather models (6 Jan 2026)",
+              "url": "https://forecastwatch.com/2026/01/06/noaa-launches-new-suite-of-weather-models/",
+              "grade": "secondary"
+            },
+            {
+              "label": "ECMWF open data",
+              "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data",
+              "grade": "primary"
+            },
+            {
+              "label": "NOAA Office of Space Commerce, RODB-2 delivery order",
+              "url": "https://space.commerce.gov/noaa-awards-3rd-delivery-order-under-radio-occultation-data-buy-ii/",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "F2",
+          "q": "How does cloud seeding work, who does it, and is there a drone fleet that can make rain within hours?",
+          "found": "Seeding releases silver iodide into clouds. Ice crystals form on the particles and grow until they fall as rain or snow. Rainmaker (El Segundo) flies drones into winter storm clouds and measures results with radar. The company says it logged 82 seeding signatures in four months, and 19 million gallons near Homer, Alaska, in about three hours. NCAR's 2017 Idaho study found seeding created snowfall. We found no source for a company promising rain in 5–7 hours.",
+          "build": "Independent measurement of seeding results for water districts.",
+          "sources": [
+            {
+              "label": "Pulse 2.0, Rainmaker $100M Series B (2 Oct 2026)",
+              "url": "https://pulse2.com/rainmaker-raises-100-million-series-b-to-scale-water-production-and-weather-modification/",
+              "grade": "secondary"
+            },
+            {
+              "label": "Rainmaker blog: Alaska results and validation report",
+              "url": "https://www.rainmaker.com/blog",
+              "grade": "primary"
+            },
+            {
+              "label": "NCAR, cloud seeding can generate snowfall (2020)",
+              "url": "https://news.ucar.edu/132716/scientists-demonstrate-cloud-seeding-can-generate-snowfall",
+              "grade": "primary"
+            }
+          ]
+        },
+        {
+          "id": "F3",
+          "q": "What if cloud seeding goes wrong, a superstorm? What are the effects on climate and biodiversity?",
+          "found": "On the evidence found, seeding effects are modest. After the July 2025 Texas flood, Rainmaker said its best operations produce tens of millions of gallons, at most about 100 million. The flood dropped over a trillion gallons. A climate scientist in the same report said that in some cases it is hard to prove seeding does anything. We found no study on downwind or biodiversity effects. That gap is the real risk.",
+          "sources": [
+            {
+              "label": "LA Times via Citrus County Chronicle, cloud seeding and the Texas flood (27 Jul 2025)",
+              "url": "https://www.chronicleonline.com/news/how-a-cloud-seeding-company-became-the-center-of-a-texas-flood-conspiracy/article_7e4b0b7e-494f-5756-bc42-a479e30834f2.html",
+              "grade": "secondary"
+            }
+          ]
+        },
+        {
+          "id": "F4",
+          "q": "Who owns the rain? Is it legal to take rain meant for somewhere else, and can places trade quotas?",
+          "found": "Federal law only requires reporting: anyone seeding clouds must report it to the Commerce Department (15 CFR 908, from a 1971 law). The rest is state law, and it varies. Florida repealed its licensing law and banned certain acts meant to change weather or sunlight, effective 1 July 2025. Alaska's natural resources department said cloud seeding is not addressed in state law. In October 2026 the Kenai Peninsula Borough created a permit rule. We found no law setting rain quotas.",
+          "build": "Permitting and reporting help for seeding operators moving state to state.",
+          "sources": [
+            {
+              "label": "15 CFR Part 908, weather modification reporting",
+              "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-IX/subchapter-A/part-908",
+              "grade": "primary"
+            },
+            {
+              "label": "Florida Senate, CS/CS/SB 56 (2025)",
+              "url": "https://flsenate.gov/Session/Bill/2025/56",
+              "grade": "primary"
+            },
+            {
+              "label": "Alaska Public Media/KDLL, Kenai borough weather modification rules (22 Oct 2026)",
+              "url": "https://alaskapublic.org/news/environment/2026-10-22/kenai-peninsula-borough-adopts-new-rules-for-weather-modification",
+              "grade": "secondary"
+            }
+          ]
+        },
+        {
+          "id": "F5",
+          "q": "Is weather-control tech ready? The AI angle, the parts list, the business case.",
+          "found": "Partly. Rainmaker flies drones, releases silver iodide, and uses radar and validation systems to estimate the extra precipitation. Since July 2025 it has partnered with Atmo, an AI weather forecasting startup, to pick clouds worth seeding. Rainmaker expects its water cost for November 2026 to April 2027 to fall below desalination; it gave no figure. It flies into winter storm clouds, so those clouds must already exist. We found no public parts list or unit costs.",
+          "build": "Flight operations, validation and permitting services around seeding, rather than the drones themselves.",
+          "sources": [
+            {
+              "label": "Pulse 2.0, Rainmaker $100M Series B (2 Oct 2026)",
+              "url": "https://pulse2.com/rainmaker-raises-100-million-series-b-to-scale-water-production-and-weather-modification/",
+              "grade": "secondary"
+            },
+            {
+              "label": "TechCrunch, Rainmaker partners with Atmo (14 Jul 2025)",
+              "url": "https://techcrunch.com/2025/07/14/rainmaker-partners-with-atmo-to-squeeze-more-rain-from-clouds",
+              "grade": "secondary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "title": "Constellations and software bills of materials",
+      "items": [
+        {
+          "id": "G1",
+          "q": "Constellations and SBOMs: who are the satellite operators, what software do they run, and is there a business?",
+          "found": "Starlink dominates: 11,148 of 17,099 active satellites on 26 October 2026, about 65%. Operational counts for others: OneWeb 625, Amazon Kuiper 368, Xingwang 224, Qianfan 195. A SpaceX lead said in 2020 that Starlink runs Linux and only software SpaceX has signed. So SpaceX is a reference point, not a buyer. In July 2026 CISA, NSA, FBI and international partners published new minimum SBOM elements, adding an author signature.",
+          "build": "SBOM checks for small operators and suppliers whose parts fly on big constellations, timed to launches, contracts and insurance renewals.",
+          "sources": [
+            {
+              "label": "Jonathan's Space Report, active satellites",
+              "url": "https://planet4589.org/space/stats/active.html",
+              "grade": "secondary"
+            },
+            {
+              "label": "Jonathan's Space Report, megaconstellations list",
+              "url": "https://planet4589.org/space/con/conlist.html",
+              "grade": "secondary"
+            },
+            {
+              "label": "Silicon UK, Starlink runs Linux (9 Jun 2020)",
+              "url": "https://silicon.co.uk/workspace/spacex-starlink-linux-345634",
+              "grade": "secondary"
+            },
+            {
+              "label": "CISA, NSA, FBI and partners: 2026 Minimum Elements for an SBOM",
+              "url": "https://www.ic3.gov/CSA/2026/260729.pdf",
+              "grade": "primary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
